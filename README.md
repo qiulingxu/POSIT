@@ -1,4 +1,4 @@
-Promotion of Semantic Item Tail via Adversarial Learning
+# Promotion of Semantic Item Tail via Adversarial Learning ( KDD-EAI 2024 )
 
 ![Demonstration](banner.png)
 
