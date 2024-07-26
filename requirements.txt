@@ -1,0 +1,8 @@
+GPUtil==1.4.0
+matplotlib==3.8.2
+numpy==2.0.1
+regex==2024.7.24
+scikit_learn==1.5.1
+scipy==1.14.0
+torch==2.4.0+cu121
+tqdm==4.65.0
