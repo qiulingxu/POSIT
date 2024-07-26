@@ -3,7 +3,7 @@
 ![Demonstration](banner.png)
 
 ## Introduction
-This is the implementation of ![Paper](https://arxiv.org/abs/2308.03366) "Promotion of Semantic Item Tail via Adversarial Learning" published in KDD-EAI 2024.
+This is the implementation of [Paper](https://arxiv.org/abs/2308.03366) "Promotion of Semantic Item Tail via Adversarial Learning" published in KDD-EAI 2024.
 
 In this paper, we focus mainly on the popularity bias, which is a particular type of bias where a recommender system recommends many popular items at a possible disadvantage to many other relevant items. The unpopular items, while have less user interaction, constitute the majority of the catalog and are typically referred to as the long tail of the catalog.  Promoting such infrequent items from the long tail is potentially crucial to users' satisfaction and a higher chance of success to every item. Different from the popular items, these infrequent items can coincide with the personalized taste, they can provide unexpected experience other than the mainstream popularity, motivate  users to explore deeper into the catalog and evoke a sense of freshness~\cite{unexpected}. On the supply side of items, many more items get a chance to succeed on the platform such that a handful of minority items do not suppress the chance of a vast majority of items.
 
@@ -12,7 +12,7 @@ We find we not only improve the performance but also improves the coverage and g
 
 ## Get the preprocessed data
 
-We follow the way of EASE by preparing the dataset into implicit feedback setting, as this is the most common in industrial setting. To download our pre-processed data, please use this ![link](https://qiulingxu-public.s3.us-east-2.amazonaws.com/common.zip) and decompress it into data folder.
+We follow the way of EASE by preparing the dataset into implicit feedback setting, as this is the most common in industrial setting. To download our pre-processed data, please use this [link](https://qiulingxu-public.s3.us-east-2.amazonaws.com/common.zip) and decompress it into data folder.
 
 ## How to Use
 
