@@ -39,6 +39,10 @@ In this paper, we focus mainly on the popularity bias, which is a particular typ
 | Million Song | MP | 100 | 50 | 20 | 0.0582 | 0.0986 | 0.0680 | 0.0427 | 0.0027 | 0.0018 | 0.0010 |
 | Standard Deviation | | ±9 | ±5 | ±2 | ±0.0009 | ±0.0009 | ±0.0009 | ±0.0009 | ±0.0004 | ±0.0004 | ±0.0004 |
 
+## Get the preprocessed data
+
+We follow the way of EASE by preparing the dataset into implicit feedback setting, as this is the most common in industrial setting. To download our pre-processed data, please use this ![link](https://qiulingxu-public.s3.us-east-2.amazonaws.com/common.zip) and decompress it into data folder.
+
 ## How to Use
 
 In the common datasets, we provide a one-stop shop for all the methods including Ours, IPW, EASE and Tail Optimization and all datasets including Movielens20, Netflix Prize and MSD. The main body is written in train_body.py. 
