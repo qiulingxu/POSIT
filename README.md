@@ -5,14 +5,20 @@
 ## Introduction
 This is the implementation of [Paper](https://arxiv.org/abs/2308.03366) "Promotion of Semantic Item Tail via Adversarial Learning" published in KDD-EAI 2024.
 
-In this paper, we focus mainly on the popularity bias, which is a particular type of bias where a recommender system recommends many popular items at a possible disadvantage to many other relevant items. The unpopular items, while have less user interaction, constitute the majority of the catalog and are typically referred to as the long tail of the catalog.  Promoting such infrequent items from the long tail is potentially crucial to users' satisfaction and a higher chance of success to every item. Different from the popular items, these infrequent items can coincide with the personalized taste, they can provide unexpected experience other than the mainstream popularity, motivate  users to explore deeper into the catalog and evoke a sense of freshness~\cite{unexpected}. On the supply side of items, many more items get a chance to succeed on the platform such that a handful of minority items do not suppress the chance of a vast majority of items.
+In this work, we focus on the semantic tail of recommendation model, which is the tail in recommendation system with semantic similarity. Promoting this tail not only improves recommendation diversity but also improves general metrics. To this aim, we devise an adversarial judge to dynamically locate this tail and use adversarial learning to keep tracking it.
 
-We find we not only improve the performance but also improves the coverage and general diversity of the recommendation results.
+## Contributions
+
+1. We propose a novel method to derive item-level advantage consistently from the user-level metrics.
+2. We devised a learning-based approach to calibrate disadvantaged items without manually designed criteria. 
+3. We theoretically show that with a Lipschitz-bounded adversary as a judge, our calibration forms semantic tails, which consist of semantically similar but disadvantaged items.
+4. We further demonstrate that optimizing on the semantic tails not only reduces popularity bias, but also improves overall performance. It achieves a win-win situation unmatched by other baselines.
 
 
 ## Get the preprocessed data
 
-We follow the way of EASE by preparing the dataset into implicit feedback setting, as this is the most common in industrial setting. To download our pre-processed data, please use this [link](https://qiulingxu-public.s3.us-east-2.amazonaws.com/common.zip) and decompress it into data folder.
+We follow the setting of implicit feedback recommendation setting. This setting is closely related to the industrial recommendation setting. We include the dataset MovieLens, Netflix Prize and Million Songs in the evaluation. We prepare them into implicit feedback compatible dataset.
+To download our pre-processed data, please use this [link](https://qiulingxu-public.s3.us-east-2.amazonaws.com/common.zip) and decompress it into data folder.
 
 ## How to Use
 
